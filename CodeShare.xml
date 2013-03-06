@@ -39,7 +39,8 @@
 
 <script type="text/javascript" src="https://hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.4"></script>
 
-    <div class="btn-group">
+    <div style="margin:5px;">
+        <div class="btn-group pull-right">
         <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
             Add Snippet <span class="caret"></span>
         </a>
@@ -79,6 +80,7 @@
             <a href="javascript: CodeShare.PublishSnippet();" class="btn btn-primary">Share</a>
         </div>
     </div>
+  </div>
 
 
 <script type="text/javascript" src="CodeShare.js"></script>
