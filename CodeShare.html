@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Share</title>
+    <link rel="stylesheet" type="text/css" href="syntaxhighlighter-3.0.83/styles/shCore.css" />
+    <link rel="stylesheet" type="text/css" href="syntaxhighlighter-3.0.83/styles/shThemeDefault.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-2.3.1/css/bootstrap.min.css" />
+
+    <script src="jquery-ui-1.10.1/js/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap-2.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushFSharp.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushSql.js"></script>
+    <style type="text/css">
+        .syntaxhighlighter .container:before, .syntaxhighlighter .container:after {
+            display: none;
+        }
+
+        .btn-group {
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="btn-group">
+        <button class="btn btn-info">Add Snippet</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="languages">
+            <li><a href="#" data-value="csharp">C#</a></li>
+            <li><a href="#" data-value="fsharp">F#</a></li>
+            <li><a href="#" data-value="powershell">Powershell</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-value="xml">XML</a></li>
+            <li><a href="#" data-value="css">CSS</a></li>
+            <li><a href="#" data-value="javascript">Javascript</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-value="sql">SQL</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-value="python">Python</a></li>
+            <li><a href="#" data-value="ruby">Powershell</a></li>
+            <li><a href="#" data-value="php">PHP</a></li>
+        </ul>
+    </div>
+
+    <div class="tabbable tabs-left" id="snippets">
+        <ul class="nav nav-tabs"></ul>
+        <div class="tab-content"></div>
+    </div>
+
+    <div id="snippet-model" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Paste Your Code Snippet</h3>
+        </div>
+        <div class="modal-body">
+            <input type="hidden" name="LanguageCode" id="language-code" />
+            <input type="hidden" name="LanguageName" id="language-name" />
+            <textarea rows="10" id="code-input" style="width: 96%;"></textarea>
+        </div>
+        <div class="modal-footer">
+            <a href="javascript: CodeShare.PublishSnippet();" class="btn btn-primary">Share</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="CodeShare.js"></script>
+</body>
+</html>
