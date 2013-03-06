@@ -1,0 +1,3 @@
+This app is presented freely and should be used at the users own risk.
+
+This app doesn't store any personal data, shared state is used for sharing code-snippets in between participants.
