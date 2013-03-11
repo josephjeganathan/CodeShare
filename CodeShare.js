@@ -11,7 +11,7 @@ var CodeShare = function () {
         PublishSnippet: function () {
             gapi.hangout.data.submitDelta(
                 {
-                    PastedBy: gapi.hangout.getLocalParticipant().person.displayName,
+                    PostedBy: gapi.hangout.getLocalParticipant().person.displayName,
                     LanguageName: $('#language-name').val(),
                     LanguageCode: $('#language-code').val(),
                     CodeSnippet: JSON.stringify($('<div/>').text($("#code-input").val()).html())
@@ -23,7 +23,7 @@ var CodeShare = function () {
             var snippetName = getCurrentTime() + " " + data.LanguageName;
             var tabId = "tab" + this.NextTabIndex;
 
-            $('#snippets > ul').prepend("<li><a href=\"#" + tabId + "\" data-toggle=\"tab\">" + snippetName + "</a></li>");
+            $('#snippets > ul').prepend("<li><a href=\"#" + tabId + "\" data-toggle=\"tab\">" + snippetName + "<br/><span class=\"label label-info\">" + data.PostedBy + "</span></a></li>");
             $('#snippets > div').prepend(
                 "<div class=\"tab-pane\" id=\"" + tabId + "\">" +
                     "<pre class=\"brush: " + data.LanguageCode + ";toolbar: false;\" >" + JSON.parse(data.CodeSnippet) + "</pre>" +
