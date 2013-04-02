@@ -15,18 +15,21 @@
 <script src="jquery-ui-1.10.1/js/jquery-1.9.1.min.js"></script>
 <script src="bootstrap-2.3.1/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shCore.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushPlain.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushCSharp.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushFSharp.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushPowerShell.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushXml.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushCss.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushJScript.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushSql.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushRuby.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushPhp.js"></script>
-<script type="text/javascript" src="syntaxhighlighter-3.0.83//scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPlain.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPlain.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushFSharp.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushXml.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shBrushPython.js"></script>
 
     <style type="text/css">
         .syntaxhighlighter .container:before, .syntaxhighlighter .container:after {
@@ -34,10 +37,7 @@
         }
         .btn-group {
             margin-left: 3px;
-        }
-        .tab-pane {
-            max-height:30em;
-        }
+        }        
     </style>
 
 <script type="text/javascript" src="https://hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.4"></script>
@@ -48,19 +48,24 @@
             Add Snippet <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" id="languages">
-            <li><a href="#" data-value="csharp">C#</a></li>
-            <li><a href="#" data-value="fsharp">F#</a></li>
-            <li><a href="#" data-value="powershell">Powershell</a></li>
-            <li class="divider"></li>
-            <li><a href="#" data-value="xml">XML</a></li>
-            <li><a href="#" data-value="css">CSS</a></li>
-            <li><a href="#" data-value="javascript">Javascript</a></li>
-            <li class="divider"></li>
-            <li><a href="#" data-value="sql">SQL</a></li>
-            <li class="divider"></li>
-            <li><a href="#" data-value="python">Python</a></li>
-            <li><a href="#" data-value="ruby">Powershell</a></li>
-            <li><a href="#" data-value="php">PHP</a></li>
+          <li><a href="#" data-value="text">Plain Text</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-value="csharp">C#</a></li>
+          <li><a href="#" data-value="fsharp">F#</a></li>
+          <li><a href="#" data-value="powershell">Powershell</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-value="java">Java</a></li>
+          <li><a href="#" data-value="scala">Scala</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-value="xml">XML</a></li>
+          <li><a href="#" data-value="css">CSS</a></li>
+          <li><a href="#" data-value="javascript">Javascript</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-value="sql">SQL</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-value="python">Python</a></li>
+          <li><a href="#" data-value="ruby">Ruby</a></li>
+          <li><a href="#" data-value="php">PHP</a></li>
         </ul>
     </div>
 

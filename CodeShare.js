@@ -71,4 +71,14 @@ $(document).ready(function () {
             CodeShare.SaveSnippet(state);
         }
     });
+
+    $(window).resize(function () {
+        resizeSnippet();
+    });
+
+    resizeSnippet = function () {
+        $('#snippets').width($(window).width() - 20);
+        $('#snippets').height($(window).height() - 20);
+    }
+    resizeSnippet();
 });
