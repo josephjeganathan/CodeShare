@@ -37,7 +37,10 @@
         }
         .btn-group {
             margin-left: 3px;
-        }        
+        }
+        .syntaxhighlighter{
+            overflow:hidden !important;
+        }
     </style>
 
 <script type="text/javascript" src="https://hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.4"></script>

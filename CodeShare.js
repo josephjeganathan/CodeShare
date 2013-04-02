@@ -76,9 +76,9 @@ $(document).ready(function () {
         resizeSnippet();
     });
 
-    resizeSnippet = function () {
-        $('#snippets').width($(window).width() - 20);
-        $('#snippets').height($(window).height() - 20);
+    function resizeSnippet() {
+        $('.tab-content').height($(window).height() - 20);
     }
+
     resizeSnippet();
 });
