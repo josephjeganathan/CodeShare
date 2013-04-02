@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="syntaxhighlighter-3.0.83/styles/shThemeDefault.css" />
 <link rel="stylesheet" type="text/css" href="bootstrap-2.3.1/css/bootstrap.min.css" />
 
-<script src="jquery-ui-1.10.1/js/jquery-1.9.1.min.js"></script>
+<script src="jquery-1.9.1/jquery-1.9.1.min.js"></script>
 <script src="bootstrap-2.3.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="syntaxhighlighter-3.0.83/scripts/shCore.js"></script>
